@@ -15,8 +15,10 @@
 
 <div>
   <p>Check your progress</p>
-  <label for="username">Enter your github username: </label>
-  <input type="text" name="username" />
+  <%= form_for :user, url: user_path do |form| %>
+    <%= form.label :username, 'Enter your github username' %>
+    <%= form.text_field :username %>
+  <% end %>
 </div>
 
 <div>
