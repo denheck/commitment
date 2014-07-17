@@ -18,7 +18,15 @@
   <%= form_for :user, url: user_path do |form| %>
     <%= form.label :username, 'Enter your github username' %>
     <%= form.text_field :username %>
+    <%= form.submit %>
   <% end %>
+</div>
+
+<div>
+  <p>Get started</p>
+  <p>Step 1: Download and install the following git hook</p>
+  <!-- http://stackoverflow.com/questions/2293498/git-commit-hooks-global-settings -->
+  <p>Step 2: Get committing!</p>
 </div>
 
 <div>
